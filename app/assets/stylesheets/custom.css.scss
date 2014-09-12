@@ -5,9 +5,15 @@
 
 $gray-medium-light: #eaeaea;
 $light-blue: rgba(86, 178, 228, 0.9);
+$light-blue-transp: rgba(86, 178, 228, 0.5);
 $medium-blue: rgba(44, 146, 204, 0.9);
-$dark-blue: rgba(59, 104, 128, 0.9);
+$dark-blue: rgba(58, 103, 127, 0.9);
+$dark-blue-transp: rgba(59, 104, 128, 0.5);
+$wsc-gray: rgba(159,159,159,0.9);
 $light: 300;
+$white: #fff;
+$medium: 0.2rem;
+$tall-line: 4rem;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -28,8 +34,9 @@ html {
 }
 
 body {
-  padding-top: 60px;
-  font-family: 'Lato', sans-serif;
+  padding-top: 68px;
+  font-family: 'Montserrat';
+  background-color: $wsc-gray
 }
 
 section {
@@ -40,14 +47,21 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;  
-  h1 {
-    margin-bottom: 10px;
-  }
+hr {
+  padding: 1rem 0;
 }
 
 /* typography */
+// @font-face {
+//    font-family: 'gotham-book';
+//     src: font-url('/gotham-book.eot');
+//     src: font-url('/gotham-book.svg#gotham-book') format('svg'), 
+//          font-url('/gotham-book.eot?#iefix') format('embedded-opentype'),
+//          font-url('/gotham-book.woff') format('woff'),
+//          font-url('/gotham-book.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -55,16 +69,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
-  letter-spacing: -1px;
   margin-bottom: 30px;
   font-weight: normal;
-  color: $gray-light;
+  letter-spacing: $medium;
+  line-height: $tall-line;
 }
 
 p {
@@ -90,23 +103,23 @@ a {
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding: 9px 0 9px 0;
   &:hover {
     color: white;
     text-decoration: none;
   }
 }
-.navbar {
-  background-color: $dark-blue;
+.navbar-default{
+  background-color: $wsc-gray;
   border: none;
-  li a {
-    color: white;
+  .navbar-nav li a {
+    color: $white;
     font-weight: $light;
     transition: all 0.2s ease;
     -webkit-transition:background 0.2s ease;
-}
+      }
     &:hover {
-      color: $light-blue;
+      color: $white;   
   	}
  .dropdown-menu {
   background-color: $medium-blue;
@@ -115,7 +128,7 @@ a {
 
 .btn {
   background-color: $light-blue;
-  border: 1px solid $medium-blue;
+  border: 1px solid $light-blue;
   transition: all 0.2s ease;
   -webkit-transition:background 0.2s ease;
   &:hover{
@@ -124,25 +137,134 @@ a {
   }
 }
 
-// .landing {
-//   position: relative;
-//   overflow: hidden;
-//   height: 100%;
-//   background-repeat: no-repeat no-repeat;
-//   background-position: 0 0;
-//   background-image: url(image-path('redwoods.jpg'));
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
+.landing {
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+  width: 100%;
+  background-repeat: no-repeat no-repeat;
+  background-position: 0 0;
+  background-image: url(image-path('field-work.jpg'));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    .mission {
+      margin-top: 20%;
+      text-align: center;
+      h1 {
+        color: $white;
+      }
+    }  
+}
+.center {
+  text-align: center;  
+}
+.statement {
+  position: relative;
+  min-height: 600px;
+  background-image: url(image-path('field-work2.jpg'));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  h2 {
+    color: $white;
+  }
+}
+
+.bend-bricks {
+  position: relative;
+  overflow: hidden;
+  min-height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat no-repeat;
+  background-position: 0 0;
+  background-image: url(image-path('bend-bricks.jpg'));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.statement-two {
+  position: relative;
+  min-height: 600px;
+  background-image: url(image-path('bend-bricks2.jpg'));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+.info-section {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  .video-box {
+    background: #000;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 2em;
+    position: relative;
+    .placeholder {
+      background: url(image-path('bend-bricks.jpg'))center top no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+      opacity: 0.85;
+      -webkit-transition: 0.2s linear all;
+      -moz-transition: 0.2s linear all;
+      -ms-transition: 0.2s linear all;
+      -o-transition: 0.2s linear all;
+      transition: 0.2s linear all;
+      cursor: pointer;
+      z-index: 1;
+    }
+    &:hover {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+      -webkit-transform: scale(1.008);
+      -moz-transform: scale(1.008);
+      -ms-transform: scale(1.008);
+      -o-transform: scale(1.008);
+      transform: scale(1.008);
+    }
+  }
+} 
+
+/*Sections*/
+
+.co-box {
+  color: $white;
+  padding: 2rem;
+  .icon {
+    display: block;
+    min-width: 70%;
+    margin: 0 auto;
+  }
+}
 
 
-
-
-
-
-
+.third-callout {
+  position: relative;
+  min-height: 700px;
+  background-image: url(image-path('elon.jpg'));
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  h2 {
+    color: $white;
+    padding: 5rem 0;
+  }
+}
 
 
 
