@@ -10,6 +10,7 @@ $medium-blue: rgba(44, 146, 204, 0.9);
 $dark-blue: rgba(58, 103, 127, 0.9);
 $dark-blue-transp: rgba(59, 104, 128, 0.5);
 $wsc-gray: rgba(159,159,159,0.9);
+$green: rgba(117,163,72,0.9);
 $light: 300;
 $white: #fff;
 $medium: 0.2rem;
@@ -138,21 +139,29 @@ a {
 }
 
 .landing {
-  position: relative;
-  overflow: hidden;
-  min-height: 700px;
-  width: 100%;
-  background-repeat: no-repeat no-repeat;
-  background-position: 0 0;
+  background: url(image-path('field-work.jpg')) 100% 100% no-repeat;
   background-image: url(image-path('field-work.jpg'));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position-x: 78%;
+  background-position-y: 100%;
+  -webkit-background-size: initial;
+  -moz-background-size: initial;
+  -o-background-size: initial;
+  background-size: initial;  
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(150, 183, 174);
+  position: relative;
+  min-height: 800px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
     .mission {
-      margin-top: 20%;
+      margin-top: 10%;
       text-align: center;
-      h1 {
+      h2 {
         color: $white;
       }
     }  
@@ -161,17 +170,24 @@ a {
   text-align: center;  
 }
 .statement {
-  position: relative;
-  min-height: 600px;
+  background: url(image-path('field-work2.jpg')) center bottom;
   background-image: url(image-path('field-work2.jpg'));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;  
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-size: auto 100%;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: auto 100%;
+  min-height: 600px;  
   h2 {
     color: $white;
   }
 }
+
 
 .bend-bricks {
   position: relative;
@@ -187,6 +203,21 @@ a {
   background-size: cover;
 }
 
+.second-callout {
+  background-color: $green; 
+  &::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1.5em 1.469em 0 1.469em;
+  border-color: #75A348 transparent transparent transparent;
+  left: 50%;
+  margin-left: -0.496em;
+  }
+}
+
 .statement-two {
   position: relative;
   min-height: 600px;
@@ -196,53 +227,102 @@ a {
   -o-background-size: cover;
   background-size: cover;  
 }
-
-.info-section {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
-  max-width: 50em;
-  margin-left: auto;
-  margin-right: auto;
-  .video-box {
-    background: #000;
-    padding-bottom: 56.25%;
-    height: 0;
-    margin-bottom: 2em;
-    position: relative;
-    .placeholder {
-      background: url(image-path('bend-bricks.jpg'))center top no-repeat;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  .info-section {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 48em) {
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+    }
+    @media (min-width: 62.5em){
+      padding-left: 0.25em;
+      padding-right: 0.25em;
+      max-width: 50em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .video-box {
+      background: #000;
+      background-image: initial;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-size: initial;
+      background-repeat-x: initial;
+      background-repeat-y: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: rgb(0, 0, 0);
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 2em;
+      position: relative;
       opacity: 0.85;
-      -webkit-transition: 0.2s linear all;
-      -moz-transition: 0.2s linear all;
-      -ms-transition: 0.2s linear all;
-      -o-transition: 0.2s linear all;
-      transition: 0.2s linear all;
-      cursor: pointer;
-      z-index: 1;
+       .placeholder {
+        background: url(image-path('yoga.jpg')) center top no-repeat;
+        background-image: url(image-path('yoga.jpg'));
+        background-position-x: 50%;
+        background-position-y: 0%;
+        background-size: cover;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+        opacity: 0.85;
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: initial;
+        cursor: pointer;
+        z-index: 1;
+      }
+      &:hover {
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+        -webkit-transform: scale(1.008);
+        -moz-transform: scale(1.008);
+        -ms-transform: scale(1.008);
+        -o-transform: scale(1.008);
+        transform: scale(1.008);
+      }
     }
-    &:hover {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-      opacity: 1;
-      -webkit-transform: scale(1.008);
-      -moz-transform: scale(1.008);
-      -ms-transform: scale(1.008);
-      -o-transform: scale(1.008);
-      transform: scale(1.008);
-    }
-  }
-} 
+  } 
 
 /*Sections*/
 
 .co-box {
-  color: $white;
   padding: 2rem;
   .icon {
     display: block;
@@ -253,20 +333,38 @@ a {
 
 
 .third-callout {
-  position: relative;
-  min-height: 700px;
+  background: url(image-path('elon.jpg')) center bottom no-repeat;
   background-image: url(image-path('elon.jpg'));
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;  
-  h2 {
-    color: $white;
-    padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  background-position-y: 100%;
+  background-size: auto 100%;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: auto 100%;
+  min-height: 600px;  
+      .text-overlay h2{
+        color: $white;
+        font-size:30px;
+        text-align:center;
+        padding: 5rem 0;
   }
 }
 
-
+.our-partners {
+  background-color: $white;
+  padding: 2rem;
+  img {
+    height: 50px;
+  }
+  h2 {
+    padding: 1rem;
+  }
+}
 
 
 
@@ -287,7 +385,7 @@ a {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
