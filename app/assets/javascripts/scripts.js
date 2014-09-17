@@ -1,6 +1,4 @@
-/*=================================
-===    CAROUSEL                ====
-=================================== */
+
 
 $(document).ready(function() {
   $('.main-nav-list, .underline').onePageNav({

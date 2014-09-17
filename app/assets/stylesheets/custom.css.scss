@@ -24,7 +24,9 @@ $fontregular: 'ProximaNova-Reg';
 $fontregularit: 'ProximaNova-RegIt';
 $fontthin: 'ProximaNova-Thin';
 $fontthinit: 'ProximaNova-ThinIt';
-
+$fontbold: 'ProximaNova-Bold';
+$fontsbold: 'ProximaNova-Sbold';
+$fontboldit: 'ProximaNova-BoldIt';
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -43,11 +45,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat';
   margin-top: 68px;
-  padding-top: 68px;
-  font-family: $fontthinit;
-  background-color: $wsc-gray
+  font-family: $fontregular;
 }
 
 section {
@@ -60,30 +59,16 @@ textarea {
 
 hr {
   padding: 1rem 0;
-  color: $light-blue;
 }
 
 /* typography */
-// @font-face {
-//    font-family: 'gotham-book';
-//     src: font-url('/gotham-book.eot');
-//     src: font-url('/gotham-book.svg#gotham-book') format('svg'), 
-//          font-url('/gotham-book.eot?#iefix') format('embedded-opentype'),
-//          font-url('/gotham-book.woff') format('woff'),
-//          font-url('/gotham-book.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
- 
-}
 
 h1 {
   font-size: 3em;
   margin-bottom: 30px;
   text-align: center;
+  font-family: $fontbold;
 }
 
 h2 {
@@ -91,16 +76,29 @@ h2 {
   font-weight: normal;
   letter-spacing: $medium;
   line-height: $tall-line;
+  font-family: $fontsbold;
 }
 
+h3, h4 {
+  font-family: $fontregular;
+}
+
+h5 {
+  font-family: $fontthinit;
+}
+h6 {
+  font-family: $fontthin;
+}
 p {
   font-size: 1.1em;
   line-height: 1.7em;
   text-align: justify;
+  font-family: $fontthin;
 }
 a {
   text-decoration: none;
   color:$light-blue;
+  font-family: $fontregular;
  	&:hover {
     text-decoration: none;
     color: $medium-blue;
@@ -284,6 +282,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   min-height: 638px;  
   h2 {
     color: $white;
+    font-family: $fontregular;
   }
 }
 
@@ -427,6 +426,10 @@ SUBNAV FOR ABOUT US AND PROJECTS
         -o-transform: scale(1.008);
         transform: scale(1.008);
       }
+        .playbutton {
+          // ~~worrisome!
+          padding-top: 15%;
+        }
     }
   } 
 
@@ -461,6 +464,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-size:30px;
         text-align:center;
         padding: 5rem 0;
+        font-family: $fontthin;
   }
 }
 
@@ -498,6 +502,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-size:30px;
         text-align:center;
         padding: 5rem 0;
+        font-family: $fontthin;
   }
 }
 
