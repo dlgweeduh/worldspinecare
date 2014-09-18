@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "fonts";
+// @import "fonts";
 
 /* mixins, variables, etc. */
 
@@ -20,13 +20,13 @@ $tall-line: 4rem;
 
 // ProximaNova Font Type
 
-$fontregular: 'ProximaNova-Reg';
-$fontregularit: 'ProximaNova-RegIt';
-$fontthin: 'ProximaNova-Thin';
-$fontthinit: 'ProximaNova-ThinIt';
-$fontbold: 'ProximaNova-Bold';
-$fontsbold: 'ProximaNova-Sbold';
-$fontboldit: 'ProximaNova-BoldIt';
+// $fontregular: 'ProximaNova-Reg';
+// $fontregularit: 'ProximaNova-RegIt';
+// $fontthin: 'ProximaNova-Thin';
+// $fontthinit: 'ProximaNova-ThinIt';
+// $fontbold: 'ProximaNova-Bold';
+// $fontsbold: 'ProximaNova-Sbold';
+// $fontboldit: 'ProximaNova-BoldIt';
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -46,7 +46,7 @@ html {
 
 body {
   margin-top: 68px;
-  font-family: $fontregular;
+  font-family: Georgia;
 }
 
 section {
@@ -68,7 +68,7 @@ h1 {
   font-size: 3em;
   margin-bottom: 30px;
   text-align: center;
-  font-family: $fontbold;
+  font-family: Georgia;
 }
 
 h2 {
@@ -76,29 +76,29 @@ h2 {
   font-weight: normal;
   letter-spacing: $medium;
   line-height: $tall-line;
-  font-family: $fontsbold;
+  font-family: Georgia;
 }
 
 h3, h4 {
-  font-family: $fontregular;
+  font-family: Georgia;
 }
 
 h5 {
-  font-family: $fontthinit;
+  font-family: Georgia;
 }
 h6 {
-  font-family: $fontthin;
+  font-family: Georgia;
 }
 p {
   font-size: 1.1em;
   line-height: 1.7em;
   text-align: justify;
-  font-family: $fontthin;
+  font-family: Georgia;
 }
 a {
   text-decoration: none;
   color:$light-blue;
-  font-family: $fontregular;
+  font-family: Georgia;
  	&:hover {
     text-decoration: none;
     color: $medium-blue;
@@ -282,7 +282,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   min-height: 638px;  
   h2 {
     color: $white;
-    font-family: $fontregular;
+    font-family: Georgia;
   }
 }
 
@@ -464,7 +464,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-size:30px;
         text-align:center;
         padding: 5rem 0;
-        font-family: $fontthin;
+        font-family: Georgia;
   }
 }
 
@@ -502,7 +502,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-size:30px;
         text-align:center;
         padding: 5rem 0;
-        font-family: $fontthin;
+        font-family: Georgia;
   }
 }
 
