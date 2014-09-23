@@ -11,7 +11,6 @@ $medium-blue: rgba(44, 146, 204, 0.9);
 $dark-blue: rgba(58, 103, 127, 0.9);
 $dark-blue-transp: rgba(59, 104, 128, 0.5);
 $wsc-gray: rgba(159,159,159,0.9);
-$green: rgba(117,163,72,1);
 $light: 300;
 $white: #fff;
 $medium: 0.2rem;
@@ -45,7 +44,7 @@ html {
 }
 
 body {
-  margin-top: 68px;
+  margin-top: 65px;
   font-family: Georgia;
 }
 
@@ -116,7 +115,7 @@ a {
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  width: 100px;
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -302,7 +301,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .second-callout {
-  background-color: $green; 
+  background-color: $wsc-gray; 
   // &::before {
   // content: "";
   // width: 0px;
@@ -321,7 +320,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   position: absolute;
   border-style: solid;
   border-width: 1.5em 1.469em 0 1.469em;
-  border-color: #75A348 transparent transparent transparent;
+  border-color: #9f9f9f transparent transparent transparent;
   left: 50%;
   margin-left: -0.496em;
   }
@@ -462,7 +461,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
       .text-overlay h2{
         color: $white;
         font-size:30px;
-        text-align:center;
+        text-align: left;
         padding: 5rem 0;
         font-family: Georgia;
   }
@@ -500,7 +499,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
       .text-overlay h2{
         color: $white;
         font-size:30px;
-        text-align:center;
+        text-align: right;
         padding: 5rem 0;
         font-family: Georgia;
   }
