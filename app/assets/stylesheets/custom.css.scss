@@ -19,6 +19,7 @@ $tall-line: 4rem;
 
 // ProximaNova Font Type
 
+<<<<<<< HEAD
 // $fontregular: 'ProximaNova-Reg';
 // $fontregularit: 'ProximaNova-RegIt';
 // $fontthin: 'ProximaNova-Thin';
@@ -26,6 +27,15 @@ $tall-line: 4rem;
 // $fontbold: 'ProximaNova-Bold';
 // $fontsbold: 'ProximaNova-Sbold';
 // $fontboldit: 'ProximaNova-BoldIt';
+=======
+$fontregular: Georgia, serif;
+$fontregularit: Georgia, serif;
+$fontthin: Georgia, serif;
+$fontthinit: Georgia, serif;
+$fontbold: Georgia, serif;
+$fontsbold: Georgia, serif;
+$fontboldit: Georgia, serif;
+>>>>>>> 8d46e63a5865280f69d5149628e2b9eaa67c8aee
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -143,11 +153,11 @@ a {
     -ms-transition: 0.2s all;
     -o-transition: 0.2s all;
     transition: 0.2s all;
-    color: $light-blue;   
+    color: $light-blue;
   }
  .dropdown-menu {
   background-color: $medium-blue;
- } 
+ }
 }
 // .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
 
@@ -242,7 +252,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   -webkit-background-size: initial;
   -moz-background-size: initial;
   -o-background-size: initial;
-  background-size: initial;  
+  background-size: initial;
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat;
   background-attachment: initial;
@@ -260,10 +270,10 @@ SUBNAV FOR ABOUT US AND PROJECTS
       h2 {
         color: $white;
       }
-    }  
+    }
 }
 .center {
-  text-align: center;  
+  text-align: center;
 }
 .statement {
   background: url(image-path('field-work2.jpg')) 100% 100%;
@@ -278,7 +288,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-clip: initial;
   background-color: initial;
   background-size: auto 100%;
-  min-height: 638px;  
+  min-height: 638px;
   h2 {
     color: $white;
     font-family: Georgia;
@@ -301,7 +311,11 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .second-callout {
+<<<<<<< HEAD
   background-color: $wsc-gray; 
+=======
+  background-color: $green;
+>>>>>>> 8d46e63a5865280f69d5149628e2b9eaa67c8aee
   // &::before {
   // content: "";
   // width: 0px;
@@ -333,7 +347,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
 }
   .info-section {
     padding-left: 0.25em;
@@ -430,7 +444,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
           padding-top: 15%;
         }
     }
-  } 
+  }
 
 /*Sections*/
 
@@ -457,7 +471,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-clip: initial;
   background-color: initial;
   background-size: auto 100%;
-  min-height: 600px;  
+  min-height: 600px;
       .text-overlay h2{
         color: $white;
         font-size:30px;
@@ -495,7 +509,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-clip: initial;
   background-color: initial;
   background-size: auto 100%;
-  min-height: 600px;  
+  min-height: 600px;
       .text-overlay h2{
         color: $white;
         font-size:30px;
@@ -518,11 +532,27 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 
+/* ============================
+Take Action Page */
 
+.ta-donate-box {
+  background-image: url(image-path('woman-carry.jpg'));
+  background-size: cover;
+  height: 500px;
+  border-radius: 5px;
+}
 
+.ta-volunteer-box {
+  background-image: url(image-path('bend-bricks.jpg'));
+  background-size: cover;
+  height: 500px;
+  border-radius: 5px;
+}
 
-
-
+.ta-action-button {
+  display: block;
+  margin: 0 auto;
+}
 
 
 
