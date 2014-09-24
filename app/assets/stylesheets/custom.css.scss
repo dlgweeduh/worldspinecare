@@ -519,11 +519,27 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 
+/* ============================
+Take Action Page */
 
+.donate-box {
+  background-image: url(image-path('woman-carry.jpg'));
+  background-size: cover;
+  height: 500px;
+  border-radius: 5px;
+}
 
+.volunteer-box {
+  background-image: url(image-path('bend-bricks.jpg'));
+  background-size: cover;
+  height: 500px;
+  border-radius: 5px;
+}
 
-
-
+.action-button {
+  display: block;
+  margin: 0 auto;
+}
 
 
 
