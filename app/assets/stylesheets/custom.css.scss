@@ -301,7 +301,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   width: 100%;
   background-repeat: no-repeat no-repeat;
   background-position: 0 0;
-  background-image: url(asset-path('bend-bricks.jpg'));
+  background-image: url('bend-bricks.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -337,7 +337,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .statement-two {
   position: relative;
   min-height: 600px;
-  background-image: url(asset-path('bend-bricks2.jpg'));
+  background-image: url('bend-bricks2.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -378,8 +378,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
       position: relative;
       opacity: 0.85;
        .placeholder {
-        background: url(asset-path('yoga.jpg')) center top no-repeat;
-        background-image: url(asset-path('yoga.jpg'));
+        background: url('yoga.jpg') center top no-repeat;
+        background-image: url('yoga.jpg');
         background-position-x: 50%;
         background-position-y: 0%;
         background-size: cover;
@@ -452,8 +452,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .tutu {
-  background: url(asset-path('tutu.jpg')) center no-repeat;
-  background-image: url(asset-path('tutu.jpg'));
+  background: url('tutu.jpg') center no-repeat;
+  background-image: url('tutu.jpg');
   background-repeat: no-repeat;
   background-position-x: 80%;
   background-position-y: 100%;
@@ -490,8 +490,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
     }
 }
 .musk {
-  background: url(asset-path('elon.jpg')) center bottom no-repeat;
-  background-image: url(asset-path('elon.jpg'));
+  background: url('elon.jpg') center bottom no-repeat;
+  background-image: url('elon.jpg');
   background-repeat: no-repeat;
   background-position-x: 20%;
   background-position-y: 100%;
@@ -530,14 +530,14 @@ SUBNAV FOR ABOUT US AND PROJECTS
 Take Action Page */
 
 .ta-donate-box {
-  background-image: url(asset-path('woman-carry.jpg'));
+  background-image: url('woman-carry.jpg');
   background-size: cover;
   height: 500px;
   border-radius: 5px;
 }
 
 .ta-volunteer-box {
-  background-image: url(asset-path('bend-bricks.jpg'));
+  background-image: url('bend-bricks.jpg');
   background-size: cover;
   height: 500px;
   border-radius: 5px;
