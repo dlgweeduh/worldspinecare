@@ -242,7 +242,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .landing {
-  background-image: url(<%= asset_path '/assets/images/field-work.jpg' %>)
+  background-image: url('/assets/images/field-work.jpg');
   // background: url(field-work.jpg) 100% 100% no-repeat;
   // background-image: url(field-work.jpg);
   background-position-x: 78%;
