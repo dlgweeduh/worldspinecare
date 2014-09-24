@@ -242,8 +242,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .landing {
-  background: url(image-path('field-work.jpg')) 100% 100% no-repeat;
-  background-image: url(image-path('field-work.jpg'));
+  background: url(asset-path('field-work.jpg')) 100% 100% no-repeat;
+  background-image: url(asset-path('field-work.jpg'));
   background-position-x: 78%;
   background-position-y: 100%;
   -webkit-background-size: initial;
@@ -273,8 +273,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
   text-align: center;
 }
 .statement {
-  background: url(image-path('field-work2.jpg')) 100% 100%;
-  background-image: url(image-path('field-work2.jpg'));
+  background: url(asset-path('field-work2.jpg')) 100% 100%;
+  background-image: url(asset-path('field-work2.jpg'));
   background-position-x: 78%;
   background-position-y: 100%;
   background-size: auto 100%;
@@ -300,7 +300,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   width: 100%;
   background-repeat: no-repeat no-repeat;
   background-position: 0 0;
-  background-image: url(image-path('bend-bricks.jpg'));
+  background-image: url(asset-path('bend-bricks.jpg'));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -336,7 +336,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .statement-two {
   position: relative;
   min-height: 600px;
-  background-image: url(image-path('bend-bricks2.jpg'));
+  background-image: url(asset-path('bend-bricks2.jpg'));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -377,8 +377,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
       position: relative;
       opacity: 0.85;
        .placeholder {
-        background: url(image-path('yoga.jpg')) center top no-repeat;
-        background-image: url(image-path('yoga.jpg'));
+        background: url(asset-path('yoga.jpg')) center top no-repeat;
+        background-image: url(asset-path('yoga.jpg'));
         background-position-x: 50%;
         background-position-y: 0%;
         background-size: cover;
@@ -451,8 +451,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .tutu {
-  background: url(image-path('tutu.jpg')) center no-repeat;
-  background-image: url(image-path('tutu.jpg'));
+  background: url(asset-path('tutu.jpg')) center no-repeat;
+  background-image: url(asset-path('tutu.jpg'));
   background-repeat: no-repeat;
   background-position-x: 80%;
   background-position-y: 100%;
@@ -489,8 +489,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
     }
 }
 .musk {
-  background: url(image-path('elon.jpg')) center bottom no-repeat;
-  background-image: url(image-path('elon.jpg'));
+  background: url(asset-path('elon.jpg')) center bottom no-repeat;
+  background-image: url(asset-path('elon.jpg'));
   background-repeat: no-repeat;
   background-position-x: 20%;
   background-position-y: 100%;
@@ -529,14 +529,14 @@ SUBNAV FOR ABOUT US AND PROJECTS
 Take Action Page */
 
 .ta-donate-box {
-  background-image: url(image-path('woman-carry.jpg'));
+  background-image: url(asset-path('woman-carry.jpg'));
   background-size: cover;
   height: 500px;
   border-radius: 5px;
 }
 
 .ta-volunteer-box {
-  background-image: url(image-path('bend-bricks.jpg'));
+  background-image: url(asset-path('bend-bricks.jpg'));
   background-size: cover;
   height: 500px;
   border-radius: 5px;
