@@ -274,8 +274,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
   text-align: center;
 }
 .statement {
-  background: url(asset-path('field-work2.jpg')) 100% 100%;
-  background-image: url(asset-path('field-work2.jpg'));
+  background: url('field-work2.jpg') 100% 100%;
+  background-image: url('field-work2.jpg');
   background-position-x: 78%;
   background-position-y: 100%;
   background-size: auto 100%;
