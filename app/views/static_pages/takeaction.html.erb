@@ -1,7 +1,33 @@
 <% provide(:title, "Take Action") %>
 
-    <h1>World Spine Care</h1>
-    <p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>It's easy to help...</h1>
+    </div>
+  </div>
+</div>
 
-    </p>
-    
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-6">
+      <!-- I want to donate section -->
+      <div class="ta-donate-box">
+        <%= link_to "I Want To Donate!", donate_path, class: "btn btn-lg btn-primary ta-action-button" %>
+
+
+      </div>
+
+    </div>
+
+    <div class="col-sm-6">
+      <!-- I want to volunteer section -->
+      <div class="ta-volunteer-box">
+        <%= link_to "I Want To Volunteer!", volunteer_path, class: "btn btn-lg btn-primary ta-action-button" %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
