@@ -1,6 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-// @import "fonts";
+@import "fonts";
 
 /* mixins, variables, etc. */
 
@@ -15,24 +15,25 @@ $light: 300;
 $white: #fff;
 $medium: 0.2rem;
 $tall-line: 4rem;
+$light-gray: rgba(242,242,242,0.9); 
 
 
 // ProximaNova Font Type
 
-// $fontregular: 'ProximaNova-Reg';
-// $fontregularit: 'ProximaNova-RegIt';
-// $fontthin: 'ProximaNova-Thin';
-// $fontthinit: 'ProximaNova-ThinIt';
-// $fontbold: 'ProximaNova-Bold';
-// $fontsbold: 'ProximaNova-Sbold';
-// $fontboldit: 'ProximaNova-BoldIt';
-$fontregular: Georgia, serif;
-$fontregularit: Georgia, serif;
-$fontthin: Georgia, serif;
-$fontthinit: Georgia, serif;
-$fontbold: Georgia, serif;
-$fontsbold: Georgia, serif;
-$fontboldit: Georgia, serif;
+$fontregular: 'ProximaNova-Reg';
+$fontregularit: 'ProximaNova-RegIt';
+$fontthin: 'ProximaNova-Thin';
+$fontthinit: 'ProximaNova-ThinIt';
+$fontbold: 'ProximaNova-Bold';
+$fontsbold: 'ProximaNova-Sbold';
+$fontboldit: 'ProximaNova-BoldIt';
+// $fontregular: Georgia, serif;
+// $fontregularit: Georgia, serif;
+// $fontthin: Georgia, serif;
+// $fontthinit: Georgia, serif;
+// $fontbold: Georgia, serif;
+// $fontsbold: Georgia, serif;
+// $fontboldit: Georgia, serif;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -52,7 +53,7 @@ html {
 
 body {
   margin-top: 65px;
-  font-family: Georgia;
+  font-family: $fontregular;
 }
 
 section {
@@ -74,7 +75,7 @@ h1 {
   font-size: 3em;
   margin-bottom: 30px;
   text-align: center;
-  font-family: Georgia;
+  font-family: $fontsbold;
 }
 
 h2 {
@@ -82,29 +83,29 @@ h2 {
   font-weight: normal;
   letter-spacing: $medium;
   line-height: $tall-line;
-  font-family: Georgia;
+  font-family: $fontregular;
 }
 
 h3, h4 {
-  font-family: Georgia;
+  font-family: $fontregular;
 }
 
 h5 {
-  font-family: Georgia;
+  font-family: $fontthin;
 }
 h6 {
-  font-family: Georgia;
+  font-family: $fontthin;
 }
 p {
   font-size: 1.1em;
   line-height: 1.7em;
   text-align: justify;
-  font-family: Georgia;
+  font-family: $fontthin;
 }
 a {
   text-decoration: none;
   color:$light-blue;
-  font-family: Georgia;
+  font-family: $fontthin;
  	&:hover {
     text-decoration: none;
     color: $medium-blue;
@@ -171,7 +172,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   display: block;
   border-right: 3px solid $light-blue;
   width: 160px;
-  margin: 0 auto;
+  margin-top: 25px;
   img {
     width: 7rem;
   }
@@ -267,6 +268,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
       text-align: center;
       h2 {
         color: $white;
+        font-family: $fontsbold;
       }
     }
 }
@@ -289,10 +291,22 @@ SUBNAV FOR ABOUT US AND PROJECTS
   min-height: 638px;
   h2 {
     color: $white;
-    font-family: Georgia;
+    font-family: $fontsbold;
   }
 }
-
+.heading {
+  background: url('heading.png') center bottom no-repeat;
+  background-image: url('heading.png');
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
 
 .bend-bricks {
   position: relative;
@@ -309,7 +323,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .second-callout {
-  background-color: $wsc-gray; 
+  background-color: $light-gray; 
   // &::before {
   // content: "";
   // width: 0px;
@@ -328,7 +342,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   position: absolute;
   border-style: solid;
   border-width: 1.5em 1.469em 0 1.469em;
-  border-color: #9f9f9f transparent transparent transparent;
+  border-color: #f2f2f2 transparent transparent transparent;
   left: 50%;
   margin-left: -0.496em;
   }
@@ -471,12 +485,12 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-size:30px;
         text-align: left;
         padding: 5rem 0;
-        font-family: Georgia;
+        font-family: $fontregular;
   }
 }
 
 .clinics {
-  background-color: $light-blue;
+  background-color: $wsc-gray;
     &::after {
       content: "";
       width: 0px;
@@ -484,7 +498,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
       position: absolute;
       border-style: solid;
       border-width: 1.5em 1.469em 0 1.469em;
-      border-color: #56B2E4 transparent transparent transparent;
+      border-color: #9f9f9f transparent transparent transparent;
       left: 50%;
       margin-left: -0.496em;
     }
@@ -509,7 +523,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-size:30px;
         text-align: right;
         padding: 5rem 0;
-        font-family: Georgia;
+        font-family: $fontregular;
   }
 }
 
@@ -517,12 +531,45 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .our-partners {
   background-color: $white;
   padding: 2rem;
+  .borders div {
+    border: 1px solid $light-gray;
+    padding: 2rem;
+  }
   img {
     height: 50px;
+    &:hover {
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        opacity: 0.5;      
+    }
   }
   h2 {
     padding: 1rem;
   }
+}
+
+.team {
+  .section-title {
+    color: $medium-blue;
+  }
+  .profile {
+    border-bottom: 2px solid $light-gray;
+    border-left: 2px solid $light-gray;
+    border-right: 2px solid $light-gray;
+    border-top: 2px solid $light-gray;    
+    padding: 2rem;
+    margin: 7rem 0;
+    }
 }
 
 
@@ -547,14 +594,6 @@ Take Action Page */
   display: block;
   margin: 0 auto;
 }
-
-
-
-
-
-
-
-
 
 
 /* footer */
