@@ -10,7 +10,7 @@ $light-blue-transp: rgba(86, 178, 228, 0.5);
 $medium-blue: rgba(44, 146, 204, 0.9);
 $dark-blue: rgba(58, 103, 127, 0.9);
 $dark-blue-transp: rgba(59, 104, 128, 0.5);
-$wsc-gray: rgba(159,159,159,0.9);
+$wsc-gray: rgba(159,159,159,1.0);
 $light: 300;
 $white: #fff;
 $medium: 0.2rem;
@@ -320,6 +320,14 @@ SUBNAV FOR ABOUT US AND PROJECTS
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    .mission {
+      margin-top: 14%;
+      text-align: center;
+      h2 {
+        color: $white;
+        font-family: $fontsbold;
+      }
+    }  
 }
 
 .second-callout {
@@ -356,6 +364,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+    h2 {
+      color: $white;
+    }
 }
   .info-section {
     padding-left: 0.25em;
