@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'takeaction' => 'static_pages#takeaction'
   get 'donate' => 'static_pages#donate'
   get 'volunteer' => 'static_pages#volunteer'
-  get 'contact' => 'static_pages#contact'
+  get 'wsday' => 'static_pages#wsday'
   get 'signup' => 'users#new'
   get    'login'    => 'sessions#new'
   delete 'logout'   => 'sessions#destroy'
