@@ -475,6 +475,10 @@ SUBNAV FOR ABOUT US AND PROJECTS
       margin-bottom: 2em;
       position: relative;
       opacity: 0.85;
+      .playbutton {
+        opacity: 1;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);        
+      }
        .placeholder {
         background: url('yoga.jpg') center top no-repeat;
         background-image: url('yoga.jpg');
