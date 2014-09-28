@@ -5,7 +5,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
-$light-blue: rgba(86, 178, 228, 1);
+$light-blue: rgba(86, 178, 228, 0.8);
 $light-blue-transp: rgba(86, 178, 228, 0.5);
 $medium-blue: rgba(44, 146, 204, 0.9);
 $dark-blue: rgba(58, 103, 127, 0.9);
@@ -112,6 +112,7 @@ a {
   }
 }
 .copy {
+  font-family: $fontregular;
   letter-spacing: 0.1rem;
   line-height: 2.5rem;
 }
@@ -675,8 +676,21 @@ WSDay Page */
   font-size:30px;
   text-align:center;
   margin-top:20%;
-  font-family: $fontregular;  
+  font-family: $fontregular;
+  span {
+    font-family: $fontregularit;
+  }   
 }
+
+.wsd-support {
+  .secondary-callout-boxes {
+    .co-box {
+      background-color: $light-gray;
+      border-radius: 100%;
+    }
+  }
+}
+
 /* ============================
 Take Action Page */
 
