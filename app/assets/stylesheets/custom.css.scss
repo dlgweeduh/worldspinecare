@@ -410,6 +410,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   // left: 50%;
   // margin-left: -0.496em;
   // }
+  h2 {
+
+  }
   &::after {
   content: "";
   width: 0px;
@@ -573,6 +576,13 @@ SUBNAV FOR ABOUT US AND PROJECTS
 
 .clinics {
   background-color: $wsc-gray;
+  .secondary-callout-boxes {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
     &::after {
       content: "";
       width: 0px;
