@@ -266,7 +266,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   overflow-y: hidden;
     .mission {
       margin-top: 10%;
-      text-align: center;
+      text-align: left;
       h2 {
         color: $white;
         font-family: $fontsbold;
@@ -275,6 +275,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 .center {
   text-align: center;
+}
+.middle {
+  vertical-align: middle;
 }
 
 
@@ -576,13 +579,91 @@ SUBNAV FOR ABOUT US AND PROJECTS
 
 .clinics {
   background-color: $wsc-gray;
-  .secondary-callout-boxes {
-    margin: 0;
-    padding: 0;
-    img {
-      width: 100%;
-    }
+  overflow: hidden;  
+  .clinic-pic {
+    min-height: 397px;
+    overflow: hidden;
   }
+    .dominican {
+      background: url('dominican.jpg') center no-repeat;
+      background-image: url('dominican.jpg');  
+      background-size: cover;   
+      .overlay:hover {          
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s; 
+        background-color: rgba(0,0,0,0); 
+      }            
+    }
+    .botswana {
+      background: url('botswana.jpg') center no-repeat;
+      background-image: url('botswana.jpg');
+      background-size: cover; 
+            padding-right: 0 !important;
+      padding-left: 0 !important;    
+      .overlay:hover {          
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s; 
+          background-color: rgba(0,0,0,0); 
+      }                  
+    }
+    .tanzania {
+      background: url('tanzania.jpg') center no-repeat;
+      background-image: url('tanzania.jpg');
+      background-size: cover;  
+      .overlay:hover {          
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s; 
+        background-color: rgba(0,0,0,0); 
+      }            
+    }
+    .india {
+      background: url('india.jpg') center no-repeat;
+      background-image: url('india.jpg');
+      background-size: cover;
+      padding-right: 0 !important;
+      padding-left: 0 !important;         
+      .overlay:hover {          
+        -webkit-transition: 0.2s linear all;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+        -webkit-transition-delay: initial;
+        -moz-transition: 0.2s linear all;
+        -ms-transition: 0.2s linear all;
+        -o-transition: 0.2s linear all;
+        transition: 0.2s linear all;
+        transition-property: all;
+        transition-duration: 0.2s; 
+        background-color: rgba(0,0,0,0); 
+      }                  
+    }
     &::after {
       content: "";
       width: 0px;
@@ -675,17 +756,17 @@ WSDay Page */
   width:100%;
   height:auto;
 }
-.video-overlay{
+.overlay{
+  margin: 0;
   position:absolute;
   width:100%;
-  height:99%;
+  height:100%;
   background-color:rgba(0,0,0,0.3);  
 }
 .text-overlay{
   color:white;
   font-size:30px;
   text-align:center;
-  margin-top:20%;
   font-family: $fontregular;
   span {
     font-family: $fontregularit;
