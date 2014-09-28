@@ -580,6 +580,14 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .clinics {
   background-color: $wsc-gray;
   overflow: hidden;  
+  h2 {
+    padding: 2rem;  
+    margin: 5rem; 
+  }
+  .clinic-overlay {
+    color: white;
+    margin-top: 30%;
+  }
   .clinic-pic {
     min-height: 397px;
     overflow: hidden;
@@ -587,7 +595,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
     .dominican {
       background: url('dominican.jpg') center no-repeat;
       background-image: url('dominican.jpg');  
-      background-size: cover;   
+      background-size: cover; 
+      vertical-align: middle;   
       .overlay:hover {          
         -webkit-transition: 0.2s linear all;
         -webkit-transition-property: all;
@@ -664,17 +673,17 @@ SUBNAV FOR ABOUT US AND PROJECTS
         background-color: rgba(0,0,0,0); 
       }                  
     }
-    // &::after {
-    //   content: "";
-    //   width: 0px;
-    //   height: 0px;
-    //   position: absolute;
-    //   border-style: solid;
-    //   border-width: 1.5em 1.469em 0 1.469em;
-    //   border-color: #9f9f9f transparent transparent transparent;
-    //   left: 50%;
-    //   margin-left: -0.496em;
-    // }
+      // &::after {
+      //   content: "";
+      //   width: 0px;
+      //   height: 0px;
+      //   position: absolute;
+      //   border-style: solid;
+      //   border-width: 1.5em 1.469em 0 1.469em;
+      //   border-color: #9f9f9f transparent transparent transparent;
+      //   left: 50%;
+      //   margin-left: -0.496em;
+      // }
 }
 .musk {
   background: url('elon.jpg') center bottom no-repeat;
