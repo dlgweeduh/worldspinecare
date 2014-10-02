@@ -618,7 +618,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .care-vision {
   font-family: 'ProximaNova-Reg';
   padding: 2rem;
-  background: url('blueprint-small.gif') repeat;
+  background: $light-blue-transp;
   background-image: url('blueprint-small.gif');
   background-position-x: initial;
   background-position-y: initial;
@@ -628,7 +628,16 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: initial;  
+  background-color: $light-blue-transp;  
+  .curriculum {
+  padding: 2rem; 
+  min-height: 100px; 
+}
+  img {
+  display: inline-block;
+  float: left;
+  margin: 2rem;
+  }
 }
 
 .musk {
