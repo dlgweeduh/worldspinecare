@@ -32,9 +32,11 @@
   <section class="projects" id="projects">
     <div class="col-sm-10 col-sm-offset-2">
       <div class="clinics-landing">
-        <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse">
-          <span class="glyphicon glyphicon-play-circle" id="playButton" style="font-size: 12rem"></span>
-        </a>
+        <span>
+          <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse">
+            <%= image_tag "play-button.png", :class => "playbutton", :id => "playButton" %>
+          </a>
+        </span>
       </div>
     </div>
   </section>
