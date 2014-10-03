@@ -607,8 +607,14 @@ SUBNAV FOR ABOUT US AND PROJECTS
         padding: 5rem 0;
         font-family: $fontregular;
   }
-  .playbutton{
+  .playbutton{    
     margin-top: 250px;   
+    @media (min-width: 200px) and (max-width: 500px) {
+      margin-top: -50px;
+    }
+    @media (min-width: 400px) and (max-width: 630px){
+      margin-top: -50px;
+    }
   }
 }
 
@@ -1055,7 +1061,7 @@ Take Action Page */
   .social-icon {
     float: left;
     width: 50px;
-    margin: 30px;
+    margin: 10px;
     -webkit-transition: 0.2s linear all;
     -webkit-transition-property: all;
     -webkit-transition-duration: 0.2s;
@@ -1066,7 +1072,13 @@ Take Action Page */
     -o-transition: 0.2s linear all;
     transition: 0.2s linear all;
     transition-property: all;
-    transition-duration: 0.2s;    
+    transition-duration: 0.2s;  
+    // @media (min-width: 200px) and (max-width: 500px) {
+    //   margin: 0 auto;
+    // }
+    // @media (min-width: 400px) and (max-width: 630px){
+    //   margin: 0 auto;
+    // }      
     &:hover {
       opacity: .75;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75)      
@@ -1079,10 +1091,6 @@ Take Action Page */
       color: $light;
     }
   }
-    .float {
-      float: right;
-      margin-right: 4rem;
-    }
   ul {
     padding-top: 2rem;    
     list-style: none;
