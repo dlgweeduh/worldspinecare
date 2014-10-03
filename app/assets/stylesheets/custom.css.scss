@@ -602,7 +602,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         font-family: $fontregular;
   }
   .playbutton{
-    padding-top: 50%;   
+    margin-top: 250px;   
   }
 }
 
@@ -1017,7 +1017,7 @@ Take Action Page */
   border-radius: 5px;
   margin: 0 0 7rem 0;
   .ta-pics {
-    max-height: 500px;
+    max-height: 500px !important;
   }
 }
 
@@ -1027,7 +1027,7 @@ Take Action Page */
   border-radius: 5px;
   margin: 0 0 7rem 0;
   .ta-pics {
-    max-height: 500px;
+    max-height: 500px !important;
   }
 }
 
