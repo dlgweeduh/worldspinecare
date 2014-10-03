@@ -121,6 +121,12 @@ ul {
 .copy {
   font-family: $fontthin;
   line-height: 2.5rem;
+  li {
+    font-size: 1.3em;
+    span {
+      font-family: $fontregular;
+    }
+  }
 }
 // .copy p:first-of-type::first-letter {
 //   font-size:  3.25em;
@@ -1002,6 +1008,7 @@ Take Action Page */
   border-radius: 6px;
   margin-left: 20px;
   margin-bottom: 10px;
+  max-width: 60%;
 }
 
 .article-img-l {
