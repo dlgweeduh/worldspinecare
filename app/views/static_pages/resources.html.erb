@@ -4,11 +4,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-5 col-sm-offset-7 mission">
-				<h2 class="center">We educate, train, and recruit spine care leaders throught the world.</h2>
+				<h2 class="center">We educate, train, and recruit spine care leaders throughout the world.</h2>
 			    <h2>
-				  <%= link_to "Make a Difference", signup_path, class: "btn btn-lg btn-primary" %>
-			    </h2>			    
-			</div>
+				  <%= link_to "Make a Difference", signup_path, class: "btn btn-lg btn-primary center" %>
+			    </h2>			    	
+			    <div class="scroll-down"> 
+            		<%= image_tag "scroll-down.svg"%>
+          		</div>			    	    
+			</div>			
 		</div>
 	</div>	
 </section>
@@ -22,7 +25,7 @@
                 <a><%= image_tag "play-button.png", :class => "playbutton"%></a>
             </div>            
         </div>
-				<%= link_to "Check out the Resources", signup_path, class: "btn btn-lg btn-primary center" %>
+				<a href="#learnMore" class="btn btn-lg btn-primary center">Check out the Resources</a>
 		    <a class="btn btn-lg btn-primary center" ref="#learnMore">Learn More</a>		
     </div>
 </section>
@@ -31,14 +34,16 @@
 <section class="caring-for-spine" id="learnMore">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-10">
-				<h1 class="header">Caring for your Spine</h1>
+			<div class="col-sm-9 col-sm-offset-2">
+				<h1 class="section-title">Caring for your Spine</h1>
 				<h2> Straighten up</h2>
-					<p>“Straighten Up” is a 3 minute, easy to perform spinal health program designed to help adults and children prevent and manage spinal pain. It is a worldwide health initiative geared to improve posture, structural development and self-esteem. The vision of Straighten Up is very simple: we envision a day when everyone performs a short enjoyable spinal exercise module daily just as we brush our teeth. It has been adopted by many countries such as Australia, the United States, New Zealand, many Canadian provinces, Hong Kong and now Botswana.</p>
-					<p>The Straighten Up initiative is important for very pressing reasons. Increasingly in this technological age, individuals are experiencing greater levels of spinal discomfort and disability related to stress and poor posture. Many people commonly work and play in cramped, awkward, slouched postures. The resulting pandemic of work and recreation-related chronic spinal disorders compromises the quality of our lives. Every year spinal disorders and back pain result in expenditures and losses of billions of dollars worldwide related to health care fees and diminished individual income and productivity.</p>
-					<p>Recent studies indicate that training school children in beneficial postural habits and exercises can be helpful in facilitating postural improvement. This is very encouraging because in today’s sedentary culture, many children spend long hours of school and recreational time in stooped awkward postures that have been correlated with poor spinal health in several studies. Other recent research indicates that the spinal health of adolescent students has been worsening over a ten-year period.</p>
-					<p>A wide range of health care professionals, fitness experts and leaders of the World Health Organization and United States Bone and Joint Decade have developed the Straighten Up and Move program.</p>
-					<p>For more information about the Straighten Up program, go to the Straighten Up America website at: <a href="www.straightenupamerica.org">StraightenUpAmerica.org</a></p>
+					<div class="copy">
+						<p>“Straighten Up” is a 3 minute, easy to perform spinal health program designed to help adults and children prevent and manage spinal pain. It is a worldwide health initiative geared to improve posture, structural development and self-esteem. The vision of Straighten Up is very simple: we envision a day when everyone performs a short enjoyable spinal exercise module daily just as we brush our teeth. It has been adopted by many countries such as Australia, the United States, New Zealand, many Canadian provinces, Hong Kong and now Botswana.</p>
+						<p>The Straighten Up initiative is important for very pressing reasons. Increasingly in this technological age, individuals are experiencing greater levels of spinal discomfort and disability related to stress and poor posture. Many people commonly work and play in cramped, awkward, slouched postures. The resulting pandemic of work and recreation-related chronic spinal disorders compromises the quality of our lives. Every year spinal disorders and back pain result in expenditures and losses of billions of dollars worldwide related to health care fees and diminished individual income and productivity.</p>
+						<p>Recent studies indicate that training school children in beneficial postural habits and exercises can be helpful in facilitating postural improvement. This is very encouraging because in today’s sedentary culture, many children spend long hours of school and recreational time in stooped awkward postures that have been correlated with poor spinal health in several studies. Other recent research indicates that the spinal health of adolescent students has been worsening over a ten-year period.</p>
+						<p>A wide range of health care professionals, fitness experts and leaders of the World Health Organization and United States Bone and Joint Decade have developed the Straighten Up and Move program.</p>
+						<p>For more information about the Straighten Up program, go to the Straighten Up America website at: <a href="www.straightenupamerica.org">StraightenUpAmerica.org</a>.</p>
+					</div>
 		</div>
 	</div>
 </section>

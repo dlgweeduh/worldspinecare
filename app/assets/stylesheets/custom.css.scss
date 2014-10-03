@@ -68,6 +68,7 @@ textarea {
 hr {
   padding: 1rem 0;
   font-weight: bold;
+  color: $wsc-gray;
 }
 
 /* typography */
@@ -99,7 +100,7 @@ h6 {
   font-family: $fontthin;
 }
 p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.7em;
   text-align: justify;
   font-family: $fontthin;
@@ -213,6 +214,55 @@ SUBNAV FOR ABOUT US AND PROJECTS
     border-bottom: $light-blue;
   }
 }
+.sub-nav {
+  position: fixed;
+  display: block;
+  border-right: 3px solid rgb(86, 178, 228);
+  width: 160px;
+  margin: 0 auto;
+}
+.sub-nav img {
+  display: block;
+  width: 7rem;
+}
+.sub-nav h4 {
+  margin: -0.2rem 0;
+}
+/*.sub-nav .projects {
+  padding-top: 90px;
+}*/
+.sub-nav li {
+  margin: 0rem;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+.main-nav-list li:first-of-type  {
+  margin-top: 1.5rem;
+}
+.sub-nav li:hover{
+  text-decoration: none;
+}
+.sub-nav .projects li {
+  margin: 0 0;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+.current a {
+  color: rgb(44, 146, 204);
+  position: relative;
+  outline: none;
+  text-decoration: none;
+}
+.current span {
+  border-bottom: 3px solid rgb(86, 178, 228);
+}
+.current img {
+  border-bottom: 3px solid rgb(86, 178, 228);
+}
+#main-nav .current a:hover {
+  text-decoration: none !important;
+}
 
 .about-icon {
   display: inline-block;
@@ -243,6 +293,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   border: 1px solid $light-blue;
   transition: all 0.2s ease;
   -webkit-transition:background 0.2s ease;
+  margin: 0 2rem;
   &:hover{
     background-color: $medium-blue;
     border: 1px solid $medium-blue;
@@ -281,6 +332,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 .middle {
   vertical-align: middle;
@@ -327,18 +379,31 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-repeat: no-repeat no-repeat;
   background-position: 0 0;
   background-image: url('bend-bricks.jpg');
+  background-position-x: 40%;
+  background-position-y: 100%;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
     .mission {
-      margin-top: 14%;
-      text-align: center;
+      margin-top: 20%;
+      text-align: center;      
       h2 {
         color: $white;
         font-family: $fontsbold;
       }
+      img {
+        margin: 0 auto;
+      }
+      .scroll-down {
+        margin: 0 auto;
+      }
     }  
+}
+.scroll-down {
+  width: 210px;
+  text-align: center;
+  padding-top: 5%;
 }
 
 .second-callout {
@@ -346,27 +411,33 @@ SUBNAV FOR ABOUT US AND PROJECTS
   h2 {
     text-align: justify;
   }
-  &::after {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-style: solid;
-  border-width: 1.5em 1.469em 0 1.469em;
-  border-color: #f2f2f2 transparent transparent transparent;
-  left: 50%;
-  margin-left: -0.496em;
-  }
+  // &::after {
+  // content: "";
+  // width: 0px;
+  // height: 0px;
+  // position: absolute;
+  // border-style: solid;
+  // border-width: 1.5em 1.469em 0 1.469em;
+  // border-color: #f2f2f2 transparent transparent transparent;
+  // left: 50%;
+  // margin-left: -0.496em;
+  // }
 }
 
 .statement-two {
   position: relative;
   min-height: 600px;
   background-image: url('bend-bricks2.jpg');
+  background-position-x: 40%; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  min-height: 638px;  
     h2 {
       color: $white;
     }
@@ -451,6 +522,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
       .placeholder-two {
         background: url('straighten-up.jpg') center top no-repeat;
         background-image: url('straighten-up.jpg');
+        background-position: -175px;
+        @media (min-width: 200px) and (max-width: 400px) {
+        }
       }
       &:hover {
         -webkit-transition: 0.2s linear all;
@@ -487,6 +561,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   .co-box {
     padding: 2rem;
     margin: 0 auto;
+    p {
+      padding: 1rem;
+    }
     h3 {
       height: 50px;
       vertical-align: middle;
@@ -524,7 +601,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .clinics {
-  background-color: $light-gray;
+  background-color: white;
   overflow: hidden;  
   h2 {
     padding: 2rem;  
@@ -647,19 +724,24 @@ SUBNAV FOR ABOUT US AND PROJECTS
   } 
   .care-principles {
     min-height: 300px; 
+    vertical-align: middle;
     .care-icons {
       background-color: $light-gray;
       border-radius: 50%;
       width: 150px;
       height: 150px;
       margin: 0 auto;
-      img {
-        margin: 40px 0 0 40px;
-        width: 60px;
-      }
+      // .icon {
+      //   display: inline-block;
+      //   height: 150px;
+      //   vertical-align: middle;
+        img {
+          width: 60px;
+          margin: 45px 0 0 45px; 
+        }
     }
       h3 {
-        font-family: $fontregular;
+        font-family: $fontthin;
         font-size: 3rem;
         line-height: 4rem;
         text-align: center;
@@ -726,11 +808,22 @@ SUBNAV FOR ABOUT US AND PROJECTS
     padding: 1rem;
   }
 }
-
-.team {
-  .section-title {
-    color: $medium-blue;
+.section-title {
+  color: $medium-blue;
+  line-height: 300px;
+}
+.section-header {
+  text-align: center;
+  padding: 75px 0;
+  color: $medium-blue;
+}
+.name {
+  font-family: $fontthin;
+  ul {
+    list-style: none;
   }
+}
+.team {
   .profile {
     border-bottom: 2px solid $light-gray;
     border-left: 2px solid $light-gray;
@@ -739,8 +832,15 @@ SUBNAV FOR ABOUT US AND PROJECTS
     padding: 2rem;
     margin: 7rem 0;
     }
+  .control-label {
+    padding-right: 10px;
+    text-align: left;
+  }    
 }
 
+.contact {
+  margin: 5rem 0;
+}
 /* ============================
 WSDay Page */
 
@@ -789,38 +889,59 @@ WSDay Page */
     }
   }
 }
+
 /* ============================
-Take Action Page */
-.projects {
-  .clinics-landing {
-    background: url('fitirst-team.jpg') 100% 100%;
-    background-image: url('first-team.jpg');
-    background-size: cover;
-    min-height: 600px;
-    width: 103%;
-    float: right;
-    margin: 0;
-    span a img{
-      margin: 0 auto;
-    }
+Blog */
+.news {
+  color: black;
+  a {
+    color: black;
   }
 }
 
 /* ============================
 Take Action Page */
 
+.caring-for-spine {
+
+}
+
+
+/* ============================
+Take Action Page */
+.projects {
+  .clinics-landing {
+    background: url('fitirst-team.jpg') 55% 80%;
+    background-image: url('first-team.jpg');
+    background-size: cover;
+    min-height: 600px;
+    width: 103%;
+    float: right;
+    margin: 0;
+    a {
+      cursor: pointer;
+    }
+    img {
+      margin: 0 auto;
+      padding: 20% 40%;
+    }
+    .playbutton{
+
+    }
+  }
+}
+
 .ta-donate-box {
-  background-image: url('woman-carry.jpg');
-  background-size: cover;
+  background-position: 0 -150px;
   height: 500px;
   border-radius: 5px;
+  margin: 0 0 7rem 0;
 }
 
 .ta-volunteer-box {
-  background-image: url('bend-bricks.jpg');
-  background-size: cover;
   height: 500px;
   border-radius: 5px;
+  margin: 0 0 7rem 0;
 }
 
 .ta-action-button {
@@ -831,8 +952,7 @@ Take Action Page */
 
 /* footer */
 
-footer {
-  margin-top: px;
+.footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $white;

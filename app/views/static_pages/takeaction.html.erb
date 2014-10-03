@@ -2,32 +2,21 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <h1>It's easy to help...</h1>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-
     <div class="col-sm-6">
       <!-- I want to donate section -->
       <div class="ta-donate-box">
         <%= link_to "I Want To Donate!", donate_path, class: "btn btn-lg btn-primary ta-action-button" %>
-
-
+            <%= image_tag "working-pair.jpg", :class => "img-responsive"%>          
       </div>
-
     </div>
 
     <div class="col-sm-6">
       <!-- I want to volunteer section -->
       <div class="ta-volunteer-box">
         <%= link_to "I Want To Volunteer!", volunteer_path, class: "btn btn-lg btn-primary ta-action-button" %>
+            <%= image_tag "woman-carry.jpg", :class => "img-responsive"%>        
       </div>
     </div>
-
   </div>
 </div>
 
