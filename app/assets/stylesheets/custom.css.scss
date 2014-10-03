@@ -480,13 +480,22 @@ SUBNAV FOR ABOUT US AND PROJECTS
   }
 
 /*Sections*/
-
-.co-box {
-  padding: 2rem;
-  .icon {
-    display: block;
-    min-width: 70%;
+.second-callout {
+  h2 {
+    padding: 5rem 0;
+  }
+  .co-box {
+    padding: 2rem;
     margin: 0 auto;
+    h3 {
+      height: 50px;
+      vertical-align: middle;
+    }
+    .icon {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -628,15 +637,38 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: $light-blue-transp;  
-  .curriculum {
-  padding: 2rem; 
-  min-height: 100px; 
-}
+  background-color: $light-blue-transp; 
+  .care-columns {
+    margin: 0 auto;
+    width: 80%;
+  }
+  h1 {
+    padding: 7rem 0;
+  } 
+  .care-principles {
+    min-height: 300px; 
+    .care-icons {
+      background-color: $light-gray;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      img {
+        margin: 40px 0 0 40px;
+        width: 60px;
+      }
+    }
+      h3 {
+        font-family: $fontregular;
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: center;
+      }
+  }
   img {
-  display: inline-block;
-  float: left;
-  margin: 2rem;
+    display: inline-block;
+    float: left;
+    margin: 2rem;
   }
 }
 
