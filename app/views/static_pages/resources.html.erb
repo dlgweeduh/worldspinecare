@@ -22,12 +22,35 @@
         <h2>Straighten Up Shoshong</h2>
         <div class="video-box">
             <div class="placeholder placeholder-two">
-                <a><%= image_tag "play-button.png", :class => "playbutton"%></a>
+              <span>
+                <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse">
+                  <%= image_tag "play-button.png", :class => "playbutton", :id => "playButton" %>
+                </a>
+              </span>
             </div>            
         </div>
 				<a href="#learnMore" class="btn btn-lg btn-primary center">Check out the Resources</a>
 		    <a class="btn btn-lg btn-primary center" ref="#learnMore">Learn More</a>		
     </div>
+
+  <!-- Project Header & Video Jumbotron End -->
+  <!-- Modal Start -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h1 class="modal-title text-center" id="myModalLabel">World Spine Day</h1>
+        </div>
+        <div class="modal-body">
+          <div class="video-container">
+			<iframe width="854" height="510" src="//www.youtube.com/embed/sBy-mo9AqGU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals End -->    
 </section>
 
 
