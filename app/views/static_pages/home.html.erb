@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-5 mission">
 				<h2 class="">We're a global charity on a mission to treat the disease with the greatest economic impact in the developing world: Spinal Disorders.</h2>
-			    <h2><%= link_to "Make a Difference", signup_path, class: "btn btn-lg btn-primary center" %></h2>
+			    <h2><%= link_to "Make a Difference", takeaction_path, class: "btn btn-lg btn-primary center" %></h2>
 			    <div class="scroll-down"> 
             <%= image_tag "scroll-down.svg"%>   
           </div>
@@ -22,7 +22,7 @@
                 </a>
             </div>
         </div>
-				  <%= link_to "Help us bring spine care to communities in need.", signup_path, class: "btn btn-lg btn-primary center" %>
+				  <%= link_to "Help us bring spine care to communities in need.", takeaction_path, class: "btn btn-lg btn-primary center" %>
     </div>
 </section>
 
@@ -33,7 +33,7 @@
 		<div class="row">
 			<div class="col-sm-12 secondary-callout-boxes center">
 								<hr>
-					<h2 class="center">World Spine Care aims to create a world in which everyone has access to the highest quality spine care available. We impro  ve lives and wellbeing for people with spinal disorders in underserved areas around the world:</h2>
+					<h2 class="center">World Spine Care aims to create a world in which everyone has access to the highest quality spine care available. We improve lives and wellbeing for people with spinal disorders in underserved areas around the world:</h2>
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 co-box">
 	          <%= image_tag "prevention.jpg", :class => "icon"%>
               <h3>Sustainable, Evidence-Based Care</h3>
@@ -113,7 +113,7 @@
     <div class="container">
       <div class="row">
           <hr>
-              <h1>We envision a world where Spine Care is:</h1> 
+              <h1 class="section-title">We practice  Spine Care that is:</h1> 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">      
               <div class="care-principles">      
                  <div class="care-icons"> 
@@ -159,7 +159,7 @@
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">                          
               <div class="care-principles">                    
                  <div class="care-icons"> 
-                    <%= image_tag "ledger.svg" %>
+                    <%= image_tag "ledger.svg", class: "raise-icon" %>
                   </div>
                     <h3>Accountable</h3>
               </div>
@@ -167,7 +167,7 @@
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">            
               <div class="care-principles">                    
                  <div class="care-icons"> 
-                    <%= image_tag "transparency.svg" %>
+                    <%= image_tag "transparency.svg", class: "lower-icon" %>
                   </div>
                     <h3>Transparent</h3>
               </div>    
@@ -177,7 +177,7 @@
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">    
               <div class="care-principles">                  
                    <div class="care-icons"> 
-                      <%= image_tag "research.svg" %>
+                      <%= image_tag "research.svg", class: "raise-icon" %>
                   </div>
                       <h3>Research &amp Outcome Oriented</h3>                  
               </div>
@@ -193,7 +193,7 @@
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">                          
               <div class="care-principles">                    
                  <div class="care-icons"> 
-                    <%= image_tag "equal.svg" %>
+                    <%= image_tag "equal.svg", class: "lower-icon" %>
                   </div>
                     <h3>Equal-Opportunity Employment</h3>
               </div>
@@ -227,7 +227,7 @@
   <div class="our-partners white-bg hidden-sm hidden-xs">
     <div class="container">
       <div class="row borders">
-        <h2 class="text-center">Our Partners</h2>
+        <h1 class="text-center section-title">Our Partners</h1>
           <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="http://www.worldspinecare.com"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/skoll-foundation.png") %> /></a>
           </div>

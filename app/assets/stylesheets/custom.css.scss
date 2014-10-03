@@ -197,7 +197,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         }
       }
   .projects li {
-    margin: 0 0;
+    margin: 3rem 0;
     padding: 1.5rem 0;
     text-align: left;
   }
@@ -719,9 +719,6 @@ SUBNAV FOR ABOUT US AND PROJECTS
     margin: 0 auto;
     width: 80%;
   }
-  h1 {
-    padding: 7rem 0;
-  } 
   .care-principles {
     min-height: 300px; 
     vertical-align: middle;
@@ -739,12 +736,19 @@ SUBNAV FOR ABOUT US AND PROJECTS
           width: 60px;
           margin: 45px 0 0 45px; 
         }
+        .lower-icon {
+          margin: 60px 0 0 45px;
+        }
+        .raise-icon {
+          margin: 30px 0 0 45px;          
+        }
     }
       h3 {
         font-family: $fontthin;
         font-size: 3rem;
         line-height: 4rem;
         text-align: center;
+        color: $medium-blue;
       }
   }
   img {
@@ -929,6 +933,17 @@ Take Action Page */
 
     }
   }
+}
+.article-img {
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.article-img-l {
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .ta-donate-box {
