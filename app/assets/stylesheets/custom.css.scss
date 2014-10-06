@@ -15,7 +15,7 @@ $light: 300;
 $white: #fff;
 $medium: 0.2rem;
 $tall-line: 4rem;
-$light-gray: rgba(242,242,242,0.9); 
+$light-gray: rgba(242,242,242,1.0); 
 $black: #000;
 
 
@@ -147,12 +147,14 @@ ul {
   }
 }
 .navbar-default{
-  background-color: $black;
+  background-color: $light-gray;
   border: none;
   .navbar-nav > li > a {
-    color: $white;
-    font-weight: $light;
+    color: $dark-blue;
+    font-weight: $medium;
+    font-family: $fontregular;
     font-size: 1.5rem; 
+    line-height: 1.5rem;
     transition: all 0.2s ease;
     -webkit-transition:background 0.2s ease;
       }
@@ -165,7 +167,7 @@ ul {
     -ms-transition: 0.2s all;
     -o-transition: 0.2s all;
     transition: 0.2s all;
-    color: $light-gray;
+    line-height: 1.2rem;
   }
  .dropdown-menu {
   background-color: $medium-blue;
@@ -414,7 +416,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 
 .second-callout {
   background-color: $light-gray; 
-  h2 {
+  h3 {
     text-align: justify;
   }
   // &::after {
@@ -627,7 +629,13 @@ SUBNAV FOR ABOUT US AND PROJECTS
     font-size: 7rem;
     line-height: 9rem;
     font-family: $fontthin;
+    @media (min-width: 200px) and (max-width: 400px) {
+      font-size: 3rem; 
 
+    }
+    @media (min-width: 400px) and (max-width: 630px){
+      font-size: 5rem; 
+    }
   }
   .clinic-overlay {
     color: white;
@@ -1053,14 +1061,16 @@ Take Action Page */
 /* footer */
 
 .footer {
-  color: $white;
-  background-color: $black;
+  color: $dark-blue;
+  background-color: $light-gray;
   font-size: 2rem;
   padding: 3rem 0;
   .social-icon {
+    width: 75px;
+    height: 75px;
     float: left;
+    img {
     width: 50px;
-    margin: 10px;
     -webkit-transition: 0.2s linear all;
     -webkit-transition-property: all;
     -webkit-transition-duration: 0.2s;
@@ -1080,12 +1090,15 @@ Take Action Page */
     // }      
     &:hover {
       opacity: .75;
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75)      
-    } 
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);      
+      width: 52px;
+      } 
+    }
   }
   a {
-    color: $white;
-    line-height: 2.2rem;    
+    color: $dark-blue;
+    line-height: 2.2rem;
+    font-family: $fontregular;        
     &:hover {
       color: $light;
     }
