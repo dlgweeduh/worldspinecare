@@ -5,12 +5,11 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
-$light-blue: rgba(86, 178, 228, 0.8);
 $light-blue-transp: rgba(86, 178, 228, 0.5);
-$medium-blue: rgba(44, 146, 204, 0.9);
 $dark-blue: rgba(58, 103, 127, 0.9);
-$dark-blue-transp: rgba(59, 104, 128, 0.5);
+$dark-blue-transp: rgba(59, 104, 128, 0.8);
 $wsc-gray: rgba(159,159,159,1.0);
+$wsc-gray-transp: rgba(159,159,159,0.8);
 $light: 300;
 $white: #fff;
 $medium: 0.2rem;
@@ -55,6 +54,7 @@ html {
 body {
   margin-top: 50px;
   font-family: $fontregular;
+  position: relative;
 }
 
 section {
@@ -107,11 +107,11 @@ p {
 }
 a {
   text-decoration: none;
-  color:$light-blue;
+  color:$dark-blue;
   font-family: $fontthin;
  	&:hover {
     text-decoration: none;
-    color: $medium-blue;
+    color: $dark-blue;
   }
 }
 ul {
@@ -126,6 +126,9 @@ ul {
     span {
       font-family: $fontregular;
     }
+  }
+  h2 {
+    text-align: left;
   }
 }
 // .copy p:first-of-type::first-letter {
@@ -170,7 +173,7 @@ ul {
     line-height: 1.2rem;
   }
  .dropdown-menu {
-  background-color: $medium-blue;
+  background-color: $dark-blue;
  }
 }
 // .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
@@ -180,15 +183,34 @@ ul {
 SUBNAV FOR ABOUT US AND PROJECTS
 ~~~
 */
-/*.sub-nav .projects {
+/*.navbar-scroll .projects {
   padding-top: 90px;
 }*/
-.sub-nav {
+.navbar-scroll {
   position: fixed;
   display: block;
   border-right: 3px solid $dark-blue;
   width: 160px;
   margin-top: 25px;
+  background-color: $light-gray;
+  color: $dark-blue;
+  position: relative;
+  outline: none;
+  text-decoration: none;  
+  .nav-tabs {
+    border-bottom: none !important;    
+    .active {
+      background-color: $dark-blue;
+      color: #555555;
+      background-color: white;
+      border: none;
+      border-bottom-color: transparent;
+      cursor: default;      
+    }
+    a {
+      border: none !important;
+    }
+  }
   img {
     width: 7rem;
   }
@@ -210,48 +232,48 @@ SUBNAV FOR ABOUT US AND PROJECTS
     text-align: left;
   }
   .current a {
-    color: $light-blue;
+    color: $dark-blue;
     position: relative;
     outline: none;
     text-decoration: none;
   }
   .current span {
-    border-bottom: $light-blue;
+    border-bottom: $dark-blue;
   }
   .current img {
-    border-bottom: $light-blue;
+    border-bottom: $dark-blue;
   }
 }
-.sub-nav {
+.navbar-scroll {
   position: fixed;
   display: block;
-  border-right: 3px solid rgb(86, 178, 228);
+  // border-right: 3px solid $dark-blue;
   width: 160px;
   margin: 0 auto;
 }
-.sub-nav img {
+.navbar-scroll img {
   display: block;
   width: 7rem;
 }
-.sub-nav h4 {
+.navbar-scroll h4 {
   margin: -0.2rem 0;
 }
-/*.sub-nav .projects {
+/*.navbar-scroll .projects {
   padding-top: 90px;
 }*/
-.sub-nav li {
+.navbar-scroll li {
   margin: 0rem;
   text-decoration: none;
   list-style: none;
   text-align: center;
 }
-.main-nav-list li:first-of-type  {
+.nav-tabs li:first-of-type  {
   margin-top: 1.5rem;
 }
-.sub-nav li:hover{
+.navbar-scroll li:hover{
   text-decoration: none;
 }
-.sub-nav .projects li {
+.navbar-scroll .projects li {
   margin: 0 0;
   padding: 1.5rem 0;
   text-align: left;
@@ -268,7 +290,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .current img {
   border-bottom: 3px solid rgb(86, 178, 228);
 }
-#main-nav .current a:hover {
+.nav-tabs a:hover {
   text-decoration: none !important;
 }
 
@@ -279,7 +301,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   padding: 1rem;
   text-decoration: none;
 }
-.sub-nav .projects> li {
+.navbar-scroll .projects> li {
   margin-top: -30px;
 }
 .projects .about-icon {
@@ -297,14 +319,14 @@ SUBNAV FOR ABOUT US AND PROJECTS
 
 
 .btn {
-  background-color: $light-blue;
-  border: 1px solid $light-blue;
+  background-color: $dark-blue-transp;
+  border: none;
   transition: all 0.2s ease;
   -webkit-transition:background 0.2s ease;
   margin: 0 2rem;
   &:hover{
-    background-color: $medium-blue;
-    border: 1px solid $medium-blue;
+    background-color: $wsc-gray-transp;
+    border: none;
   }
 }
 
@@ -318,8 +340,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
   -moz-background-size: initial;
   -o-background-size: initial;
   background-size: initial;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -360,7 +382,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-color: initial;
   background-size: auto 100%;
   min-height: 638px;
-  h2 {
+  h1 {
+    line-height: 4rem;
     color: $white;
     font-family: $fontsbold;
   }
@@ -730,7 +753,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .care-vision {
   font-family: 'ProximaNova-Reg';
   padding: 2rem;
-  background: $light-blue-transp;
+  background: $dark-blue-transp;
   background-image: url('blueprint-small.gif');
   background-position-x: initial;
   background-position-y: initial;
@@ -740,7 +763,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-attachment: fixed;
   background-origin: initial;
   background-clip: initial;
-  background-color: $light-blue-transp; 
+  background-color: $dark-blue-transp; 
   .care-columns {
     margin: 0 auto;
     width: 80%;
@@ -774,7 +797,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
       h3 {
         line-height: 3rem;
         text-align: center;
-        color: $medium-blue;
+        color: $dark-blue;
       }
   }
   img {
@@ -841,13 +864,13 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 .section-title {
   color: $dark-blue;
-  line-height: 200px;
+  line-height: 100px;
   border-right: 3px solid $light-gray;
   margin-right: -10%; 
 }
 .section-header {  
   text-align: center;
-  padding: 50px 0;
+  padding: 25px 0;
   color: $dark-blue;
 }
 .name {
