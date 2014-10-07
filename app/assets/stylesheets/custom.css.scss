@@ -186,26 +186,34 @@ SUBNAV FOR ABOUT US AND PROJECTS
 /*.navbar-scroll .projects {
   padding-top: 90px;
 }*/
+
+
 .navbar-scroll {
   position: fixed;
   display: block;
-  border-right: 3px solid $dark-blue;
+  // border-right: 3px solid $dark-blue;
   width: 160px;
   margin-top: 25px;
-  background-color: $light-gray;
   color: $dark-blue;
   position: relative;
   outline: none;
   text-decoration: none;  
   .nav-tabs {
-    border-bottom: none !important;    
+    border-bottom: none !important;
+    > li > a:hover{
+      border-color: #fff #fff #fff;
+    }    
     .active {
-      background-color: $dark-blue;
       color: #555555;
-      background-color: white;
-      border: none;
-      border-bottom-color: transparent;
-      cursor: default;      
+      border-bottom: transparent;
+      cursor: default;  
+      border-right: 3px solid $dark-blue; 
+      a {
+        background-color: initial;
+      }       
+      span {
+        border-bottom: 3px solid $dark-blue;  
+      }
     }
     a {
       border: none !important;
@@ -244,6 +252,10 @@ SUBNAV FOR ABOUT US AND PROJECTS
     border-bottom: $dark-blue;
   }
 }
+
+.nav-tabs li:first-of-type  {
+  margin-top: 1.5rem;
+}
 .navbar-scroll {
   position: fixed;
   display: block;
@@ -267,9 +279,6 @@ SUBNAV FOR ABOUT US AND PROJECTS
   list-style: none;
   text-align: center;
 }
-.nav-tabs li:first-of-type  {
-  margin-top: 1.5rem;
-}
 .navbar-scroll li:hover{
   text-decoration: none;
 }
@@ -278,18 +287,22 @@ SUBNAV FOR ABOUT US AND PROJECTS
   padding: 1.5rem 0;
   text-align: left;
 }
+.navbar-scroll .projects> li {
+  margin-top: -30px;
+}
+
 .current a {
   color: rgb(44, 146, 204);
   position: relative;
   outline: none;
   text-decoration: none;
 }
-.current span {
-  border-bottom: 3px solid rgb(86, 178, 228);
-}
-.current img {
-  border-bottom: 3px solid rgb(86, 178, 228);
-}
+// .current span {
+//   border-bottom: 3px solid rgb(86, 178, 228);
+// }
+// .current img {
+//   border-bottom: 3px solid rgb(86, 178, 228);
+// }
 .nav-tabs a:hover {
   text-decoration: none !important;
 }
@@ -301,9 +314,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   padding: 1rem;
   text-decoration: none;
 }
-.navbar-scroll .projects> li {
-  margin-top: -30px;
-}
+
 .projects .about-icon {
   width: 70%;
   height: 150px;
