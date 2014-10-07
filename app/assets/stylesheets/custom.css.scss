@@ -187,6 +187,10 @@ SUBNAV FOR ABOUT US AND PROJECTS
   padding-top: 90px;
 }*/
 
+.clinic-names {
+  text-align: left;
+  margin-left: 20px;
+}
 
 .navbar-scroll {
   position: fixed;
@@ -212,7 +216,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
         background-color: initial;
       }       
       span {
-        border-bottom: 3px solid $dark-blue;  
+        border-bottom: 3px solid $wsc-gray;  
       }
     }
     a {
@@ -237,7 +241,6 @@ SUBNAV FOR ABOUT US AND PROJECTS
   .projects li {
     margin: 3rem 0;
     padding: 1.5rem 0;
-    text-align: left;
   }
   .current a {
     color: $dark-blue;
@@ -246,15 +249,16 @@ SUBNAV FOR ABOUT US AND PROJECTS
     text-decoration: none;
   }
   .current span {
-    border-bottom: $dark-blue;
+    border-bottom: $light-gray;
   }
   .current img {
     border-bottom: $dark-blue;
   }
 }
 
-.nav-tabs li:first-of-type  {
-  margin-top: 1.5rem;
+#clinic-title {
+  font-family: $fontbold;
+  font-size: 3rem;
 }
 .navbar-scroll {
   position: fixed;
@@ -282,10 +286,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
 .navbar-scroll li:hover{
   text-decoration: none;
 }
-.navbar-scroll .projects li {
+.projects .nav .nav-tabs span li {
   margin: 0 0;
-  padding: 1.5rem 0;
-  text-align: left;
+  padding: 1.5rem;
 }
 .navbar-scroll .projects> li {
   margin-top: -30px;
@@ -315,6 +318,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   text-decoration: none;
 }
 
+.projects {
+  margin-top: 50px; 
+}
 .projects .about-icon {
   width: 70%;
   height: 150px;
