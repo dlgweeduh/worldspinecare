@@ -671,7 +671,6 @@ SUBNAV FOR ABOUT US AND PROJECTS
     font-family: $fontthin;
     @media (min-width: 200px) and (max-width: 400px) {
       font-size: 3rem; 
-
     }
     @media (min-width: 400px) and (max-width: 630px){
       font-size: 5rem; 
@@ -729,7 +728,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
     .tanzania {
       background: url('tanzania-man.jpg') center no-repeat;
       background-image: url('tanzania-man.jpg');
-      background-size: cover;  
+      background-size: cover; 
+      height: 100%; 
       .overlay:hover {          
         -webkit-transition: 0.2s linear all;
         -webkit-transition-property: all;
