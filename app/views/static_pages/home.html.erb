@@ -20,7 +20,7 @@
         <div class="video-box">
             <div class="placeholder">
               <span>
-                <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse">
+                <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse" href="#videoModal">
                   <%= image_tag "play-button.png", :class => "playbutton", :id => "playButton" %>
                 </a>
               </span>
@@ -86,12 +86,12 @@
           </div>
           <div class="col-sm-2">            
               <span>
-                <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse">
+                <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse" href="#mymodal2">
                   <%= image_tag "play-button.png", :class => "playbutton", :id => "playButton" %>
                 </a>
               </span>
           </div>
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -100,8 +100,7 @@
         </div>
         <div class="modal-body">
           <div class="video-container">
-            <iframe width="854" height="510" src="//www.youtube.com/embed/qXXN8cTqGbk" frameborder="0" allowfullscreen></iframe>
-</div>
+            <iframe width="640" height="390" src="https://www.youtube.com/embed/qXXN8cTqGbk" frameborder="0" allowfullscreen></iframe></div>
       </div>
     </div>
   </div>
