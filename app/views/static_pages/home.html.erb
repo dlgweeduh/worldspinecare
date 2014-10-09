@@ -86,12 +86,12 @@
           </div>
           <div class="col-sm-2">            
               <span>
-                <a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse" href="#mymodal2">
+                <a data-toggle="basicModal" data-target="#videoModal" class="animated infinite pulse" href="#mymodal2">
                   <%= image_tag "play-button.png", :class => "playbutton", :id => "playButton" %>
                 </a>
               </span>
           </div>
-  <div class="modal fade" id="mymodal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -285,7 +285,7 @@
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="http://www.worldspinecare.com"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/palmer120.png") %> /></a>
-          </div>
+          </div>        
           <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="http://www.worldspinecare.com"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/premier.png") %> /></a>
           </div>           
@@ -307,7 +307,7 @@
     <div class="container">
       <div class="row borders">
         <h2 class="text-center section-header">Collaborating Institutions</h2>
-          <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-6">
+          <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="http://health.usf.edu/medicine/dpt/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/usf.png") %> /></a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
@@ -322,6 +322,9 @@
           <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="http://manoa.hawaii.edu/publichealth/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/jab.png") %> /></a>
           </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <a href="http://www.uoit.ca/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/uoit.png") %> /></a>
+          </div>            
       </div><!-- /.row -->
     </div>
     <div class="container">
@@ -343,11 +346,14 @@
             <a href="http://www.wfc.org/website/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/wfc120.png") %> /></a>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
-            <a href="http://www.saspine.org/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/sass120.png") %> /></a>
-          </div>
-          <div class="col-md-2 col-sm-4 col-xs-6">
+            <a href="http://www.wccsworldwide.org//"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/wccs.png") %> /></a>
+          </div>          
+          <div class="col-md-1 col-sm-2 col-xs-3">
             <a href="http://www.chiropractic.co.za/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/casa.jpg") %> /></a>
           </div>
+          <div class="col-md-1 col-sm-2 col-xs-3">
+            <a href="http://www.saspine.org/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/sass120.png") %> /></a>
+          </div>          
           <div class="col-md-2 col-sm-4 col-xs-6">
             <a href="http://www.isass.org/"><img class="img-responsive center-block partner-logo" src=<%= asset_path("partners/css.png") %> /></a>
           </div>
