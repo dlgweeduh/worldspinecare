@@ -1,19 +1,19 @@
-// $("#nav ul li a[href^='#']").on('click', function(e) {
+$("#nav ul li a[href^='#']").on('click', function(e) {
 
-//    // prevent default anchor click behavior
-//    e.preventDefault();
+   // prevent default anchor click behavior
+   e.preventDefault();
 
-//    // store hash
-//    var hash = this.hash;
+   // store hash
+   var hash = this.hash;
 
-//    // animate
-//    $('navbar-scroll').animate({
-//        scrollTop: $(this.hash).offset().top
-//      }, 300, function(){
+   // animate
+   $('navbar-scroll').animate({
+       scrollTop: $(this.hash).offset().top
+     }, 300, function(){
 
-//        // when done, add hash to url
-//        // (default click behaviour)
-//        window.location.hash = hash;
-//      });
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
 
-// });
+});
