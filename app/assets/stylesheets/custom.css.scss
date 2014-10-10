@@ -149,6 +149,10 @@ ul {
     text-decoration: none;
   }
 }
+.navbar-scroll .nav > li > a:focus,
+.navbar-scroll .nav > li > a:hover {
+  background-color: $light-gray !important;
+}
 .navbar-default{
   background-color: $light-gray;
   border: none;
