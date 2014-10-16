@@ -202,29 +202,25 @@ SUBNAV FOR ABOUT US AND PROJECTS
   // border-right: 3px solid $dark-blue;
   width: 160px;
   margin-top: 25px;
+  margin-left: 50px;
   color: $dark-blue;
   position: relative;
   outline: none;
   text-decoration: none;  
   .nav-tabs {
     border-bottom: none !important;
-    .active {
-      color: #555555;    
-      border-bottom: transparent;
-      cursor: pointer;  
-      border-right: 3px solid $dark-blue; 
-    > li {
-      > a:hover{
+    color: #555555;    
+    border-bottom: transparent;
+    cursor: pointer;  
+    border-right: 3px solid $dark-blue;     
+          >li > a:hover{
         border-color: #fff #fff #fff;
         border-radius: 0 0 0 0 !important;
-        }   
-    } 
-      a {
-        background-color: initial;
-      }       
-      span {
-        border-bottom: 3px solid $wsc-gray;  
-        }
+        }  
+    .active {   
+      // span {
+      //   border-bottom: 3px solid $wsc-gray;  
+      //   }
       }
     }
     a {
@@ -269,7 +265,6 @@ SUBNAV FOR ABOUT US AND PROJECTS
   display: block;
   // border-right: 3px solid $dark-blue;
   width: 160px;
-  margin: 0 auto;
 }
 .navbar-scroll img {
   display: block;

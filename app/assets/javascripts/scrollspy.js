@@ -1,19 +1,13 @@
-$("#nav ul li a[href^='#']").on('click', function(e) {
+// Smooth Scrolling
 
-   // prevent default anchor click behavior
-   e.preventDefault();
+$(document).ready(function() {
 
-   // store hash
-   var hash = this.hash;
+  smoothScroll.init({
+  speed: 500, // Integer. How fast to complete the scroll in milliseconds
+  easing: 'easeInOutCubic', // Easing pattern to use
+  updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+  offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
 
-   // animate
-   $('navbar-scroll').animate({
-       scrollTop: $(this.hash).offset().top
-     }, 300, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
-
+  });
+  
 });

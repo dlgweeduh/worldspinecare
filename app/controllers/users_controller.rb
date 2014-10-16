@@ -4,10 +4,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-  end
-
-  def show
-    @user = User.find(params[:id])
+    debugger
   end
 
   def new
@@ -27,7 +24,7 @@ class UsersController < ApplicationController
   end
 
 
-def index
+  def index
     @users = User.all.paginate(:page => params[:page], :per_page => 10)
   end
 
@@ -74,16 +71,14 @@ def index
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
     end
+
   def create
     @user = User.new(user_params)
     if @user.save
-      # Handle a successful save.
     else
       render 'new'
     end
   end
-
-  private
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
