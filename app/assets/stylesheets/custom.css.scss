@@ -360,12 +360,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   -moz-background-size: initial;
   -o-background-size: initial;
   background-size: initial;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: rgb(150, 183, 174);
   position: relative;
   min-height: 800px;
   overflow: hidden;
@@ -394,8 +391,6 @@ SUBNAV FOR ABOUT US AND PROJECTS
   background-position-x: 78%;
   background-position-y: 100%;
   background-size: auto 100%;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -423,15 +418,11 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .bend-bricks {
-  position: relative;
-  overflow: hidden;
   min-height: 900px;
-  width: 100%;
   background-repeat: no-repeat no-repeat;
-  background-position: 0 0;
   background-image: url('bend-bricks.jpg');
-  background-position-x: 40%;
-  background-position-y: 100%;  
+  // background-position-x: 40%;
+  // background-position-y: 100%;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -476,19 +467,15 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 
 .statement-two {
-  position: relative;
-  min-height: 600px;
+  min-height: 900px;
+  background-repeat: no-repeat no-repeat;
   background-image: url('bend-bricks2.jpg');
-  background-position-x: 40%; 
+  // background-position-x: 40%;
+  // background-position-y: 100%;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
-  min-height: 638px;  
+  background-size: cover;  
     h2 {
       color: $white;
     }
