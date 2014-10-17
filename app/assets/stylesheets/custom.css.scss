@@ -150,8 +150,9 @@ ul {
   }
 }
 .navbar-scroll .nav > li > a:focus,
-.navbar-scroll .nav > li > a:hover {
-  background-color: $light-gray !important;
+.navbar-scroll .nav > li > a:hover,
+.navbar-scroll .nav > li > h4:hover  {
+  background-color: transparent !important;
 }
 .navbar-default{
   background-color: $light-gray;
@@ -209,20 +210,22 @@ SUBNAV FOR ABOUT US AND PROJECTS
   text-decoration: none;  
   .nav-tabs {
     border-bottom: none !important;
-    color: #555555;    
+    color: transparent;    
     border-bottom: transparent;
     cursor: pointer;  
     border-right: 3px solid $dark-blue;     
-          >li > a:hover{
+          .active {   
+        border-right: 3px solid $light-gray;
+      }
+          >li > a {
+            background-color: transparent;
+          &:hover{
         border-color: #fff #fff #fff;
         border-radius: 0 0 0 0 !important;
-        }  
-    .active {   
-      // span {
-      //   border-bottom: 3px solid $wsc-gray;  
-      //   }
-      }
+        }
     }
+  }
+
     a {
       border: none !important;
     }
